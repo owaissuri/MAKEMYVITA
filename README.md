@@ -1,2 +1,10 @@
 # MAKEMYVITA
 END TO END WEBSITE DESIGN USING MEAN STACK.
+
+____________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________
+
+A complete Front-end and Back-end designed using javascript.
+AngularJS,nodeJS,mongoDB and Express framework is used for the RESTful API.
+
+NOTE: Still in Progress.
