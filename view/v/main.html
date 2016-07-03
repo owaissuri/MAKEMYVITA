@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Resume Builder</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js">
+   </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-family:Brush Script MT;font-size:30px;margin-left:20px;color:#428bca;">
+        <b>MAKEMYVITA.COM</b>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div ng-app="mainApp" style="margin-top: 50px; margin-bottom: 100px; margin-right: 150px; margin-left: 80px;">
+
+<div class="list-group">
+  <a href="" class="list-group-item active">MY RESUME BUILDER</a>
+  <a href="#personaldetails" class="list-group-item">Personal Details</a>
+  <a href="#education" class="list-group-item">Education</a>
+  <a href="#experience" class="list-group-item">Experience</a>
+  <a href="#career" class="list-group-item">Career</a>
+</div>
+<div ng-view></div>
+<script type ="text/ng-template" id = "personaldetails.html">
+<h1></h1>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 1%">
+    <span class="sr-only">0% Complete</span>
+  </div>
+</div>
+<h1> Personal details </h1>
+<form method="">
+    <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" class="form-control" id="fname" placeholder="First Name">
+	</div>
+	<div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text" class="form-control" id="lname" placeholder="Last Name">
+    </div>
+	<div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" id="address" placeholder="Address">
+	</div>
+	<div class="form-group">
+        <label for="telephone">Telephone</label>
+        <input type="text" class="form-control" id="telephone" placeholder="Telephone">
+	</div>
+	<div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+	</div>
+</form>
+</script>
+
+<script type ="text/ng-template" id = "education.html">
+<h1></h1>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+    <span class="sr-only">25% Complete</span>
+  </div>
+</div>
+<h1> Education </h1>
+<form method="">
+    <div class="form-group">
+        <label for="institution">INSTUTION NAME</label>
+        <input type="text" class="form-control" id="institution" placeholder="Institution Name">
+	</div>
+	<div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" class="form-control" id="location" placeholder="Location">
+    </div>
+	<div class="form-group">
+        <label for="degree">Degree</label>
+        <input type="text" class="form-control" id="degree" placeholder="Degree">
+	</div>
+	<div class="form-group">
+        <label for="details">Details</label>
+         <textarea class="form-control" rows="5" id="details" placeholder="Details"></textarea>
+	</div>
+	<button type="button" class="btn btn-default" aria-label="Left Align" ng-click="">
+    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" style="font-size:20px;"></span>
+    </button>
+</form>
+</script>
+
+<script type ="text/ng-template" id = "experience.html">
+<h1></h1>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+    <span class="sr-only">50% Complete</span>
+  </div>
+</div>
+<h1> Experience </h1>
+<form method="">
+    <div class="form-group">
+        <label for="title">Job Title</label>
+        <input type="text" class="form-control" id="title" placeholder="Job Title">
+	</div>
+	<div class="form-group">
+        <label for="comapny">Company</label>
+        <input type="text" class="form-control" id="comany" placeholder="Company">
+    </div>
+	<div class="form-group">
+        <label for="from">Date From</label>
+        <input type="text" class="form-control" id="from" placeholder="From">
+	</div>
+	<div class="form-group">
+        <label for="to">To</label>
+        <input type="text" class="form-control" id="to" placeholder="To">
+	</div>
+	<div class="form-group">
+        <label for="discription">Discription</label>
+         <textarea class="form-control" rows="5" id="discription" placeholder="Job Discription"></textarea>
+	</div>
+	<button type="button" class="btn btn-default" aria-label="Left Align" ng-click="">
+    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" style="font-size:20px;"></span>
+    </button>
+</form>
+</script>
+
+<script type ="text/ng-template" id = "career.html">
+<h1></h1>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+    <span class="sr-only">75% Complete</span>
+  </div>
+</div>
+<h1> Career </h1>
+<form method="">
+    <div class="form-group">
+        <label for="objective">Career Objective</label>
+        <textarea class="form-control" rows="5" id="objective" placeholder="Career objective"></textarea>
+
+	</div>
+	<div class="form-group">
+        <label for="skills">Skills & Abilities</label>
+        <textarea class="form-control" rows="5" id="skills" placeholder="Skills & Abilities"></textarea>
+
+    </div>
+	<div class="form-group">
+        <label for="projects">Projects</label>
+         <textarea class="form-control" rows="5" id="projects" placeholder="Projects"></textarea>        
+		</div>
+	<button type="button" class="btn btn-default" aria-label="Left Align" ng-click="">
+    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" style="font-size:15px;"></span>
+    </button>
+	<h1></h1>
+	<div class="form-group">
+        <label for="leadership">Leadership</label>
+         <textarea class="form-control" rows="5" id="leadership" placeholder="Leadership"></textarea>
+		</div>
+	<div class="form-group">
+        <label for="addskill">Additional Skills</label>
+		<textarea class="form-control" rows="5" id="addskill" placeholder="Additional Skills"></textarea>
+	</div>
+</form>
+</script>
+<div>
+
+<script>
+         var mainApp = angular.module("mainApp", ['ngRoute']);
+         mainApp.config(['$routeProvider', function($routeProvider) {
+            $routeProvider.
+            
+            when('/personaldetails', {
+               templateUrl: 'personaldetails.html',
+            }).
+            
+            when('/education', {
+               templateUrl: 'education.html',
+            }).
+			
+			when('/experience', {
+               templateUrl: 'experience.html',
+            }).
+			
+			when('/career', {
+               templateUrl: 'career.html',
+            }).
+            
+            otherwise({
+               redirectTo: '/personaldetails'
+            });
+         }]);
+         
+			
+      </script>
+</body>
+</html>
